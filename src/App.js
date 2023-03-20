@@ -1,15 +1,12 @@
 import './App.scss';
 import './style/banner.scss';
 import './style/contact-form.scss';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <div className='app-header'>
-        <div className='app-header-content'>
-        
-        </div>
-      </div>
+      <Header/>
       <div className='section banner col-6'>
         
       </div>

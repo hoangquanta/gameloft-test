@@ -10,24 +10,5 @@
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
-  .app-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    @media (min-width: 1200px) {
-      padding-right: 17px;
-    }
-    &-content {
   
-      height: 76px;
-      padding: 0 80px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #fff;
-      opacity: 0.6;
-    }
-  }
-  
-
 }

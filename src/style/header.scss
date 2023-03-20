@@ -1,0 +1,26 @@
+.app-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @media (min-width: 1200px) {
+      padding-right: 17px;
+    }
+    &-content {
+      height: 76px;
+      padding: 0 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255,255,255,0.6);
+
+      @media (max-width: 767px ) {
+        padding: 0 18px 0 21px;
+        .logo svg {
+            width: 96px;
+        }
+        .nav-toggle img {
+            width: 27px;
+        }
+      }
+    }
+  }
