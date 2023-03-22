@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/gameloft-test/static/css/main.b75dde9a.css",
+    "main.js": "/gameloft-test/static/js/main.2fa136ca.js",
+    "static/js/787.982b5847.chunk.js": "/gameloft-test/static/js/787.982b5847.chunk.js",
+    "static/media/Minion.webp": "/gameloft-test/static/media/Minion.fc1637f5a0112e7994c5.webp",
+    "static/media/social-logos.svg": "/gameloft-test/static/media/social-logos.9b7abec6b64094b316746544ef17349a.svg",
+    "static/media/english.svg": "/gameloft-test/static/media/english.888d20b96f34a49773e36e09fafe7736.svg",
+    "index.html": "/gameloft-test/index.html",
+    "main.b75dde9a.css.map": "/gameloft-test/static/css/main.b75dde9a.css.map",
+    "main.2fa136ca.js.map": "/gameloft-test/static/js/main.2fa136ca.js.map",
+    "787.982b5847.chunk.js.map": "/gameloft-test/static/js/787.982b5847.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b75dde9a.css",
+    "static/js/main.2fa136ca.js"
+  ]
+}
