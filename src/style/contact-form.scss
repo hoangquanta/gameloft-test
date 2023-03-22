@@ -1,9 +1,95 @@
+@import './variables.scss';
 .contact-form {
-    background: cadetblue;
-    &2{
-        background: bisque;
-    }
-    &3 {
-        background: green;
+    height: 100%;
+    background: rgba(216, 237, 255,0.51);
+    display: flex;
+    align-items: center;
+    .form-content {
+        display: flex;
+        justify-content: center;
+        .media {
+            flex-grow: 1;
+            img{
+                transform: scaleX(-1) translateX(50px);
+            }
+        }
+        .form {
+            width: 251px;
+            @media (min-width: 768px) {
+                margin-right: 121px;
+            }
+            .form-title {
+                font-size: 25px;
+                font-weight: bold;
+                margin-bottom: 1px;
+            }
+            .form-description {
+                font-size: 12px;
+                font-weight: 400;
+                margin-bottom: 27px;
+            }
+            input.form-control, select {
+                border-color: $primaryText;
+                border-radius: 3px;
+                padding-left: 10px;
+                height: 30px;
+                width: 251px;
+                font-size: 12px;
+                font-weight: 400;
+                color: $primaryText;
+                margin-bottom: 9px;
+
+                &::placeholder {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $primaryText;
+                }
+            }
+            select {
+                padding-left: 6px;
+                option {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $primaryText;
+                }
+            }
+            .policy {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                .checkbox {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 8px;
+                    label {
+                        font-size: 10px;
+                        font-weight: 400;
+                        color: $primaryText;
+                    }
+                    input {
+                        position: relative;
+                        top: 3px;
+                        accent-color: #218fed;
+                    }
+                }
+                
+            }
+            .actions {
+                text-align: center;
+                button {
+                    width: 100px;
+                    height: 30px;
+                    border: 1px solid $primaryText;
+                    background: transparent;
+                    border-radius: 3px;
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: $primaryText;
+                
+                    &:hover {
+                        background: rgba(#fff,0.8);
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,3 +1,138 @@
+@import './variables.scss';
 .banner {
+    height: 100%;
     background: #2699FB;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $bannerText;
+    .banner-body {
+        .banner-image {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .banner-text {
+            margin-bottom: 50px;
+            .game-title {
+                font-size: 45px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .review {
+                display: flex;
+                font-size: 11px;
+                font-weight: 500;
+                margin-bottom: 36px;
+                .category {
+                    padding-right: 15px;
+                    line-height: 10px;
+                }
+                .rating {
+                    padding-left: 10px;
+                    border-left: 1px solid $bannerText;
+                    font-size: 3px;
+                }
+            }
+            .game-description {
+                font-size: 20px;
+                font-weight: 400;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis; 
+                -webkit-line-clamp: 3;
+            }
+        }
+    }
+    .banner-footer {
+        background: #D8EDFF;
+        .container {
+            padding-top: 18px;
+            padding-bottom: 21px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            a.download {
+                font-size: 20px;
+                font-weight: bold;
+                text-decoration: none;
+                cursor: pointer;
+                color: $primaryText;
+
+            }
+            .platforms {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                .steam,.microsoft {
+                    img {
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        .banner-body {
+            .banner-image {
+                top: 25%;
+                img {
+                    width: 154px;
+                }
+            }
+            .banner-text {
+                .game-description {
+                    font-size: 12px;
+                    
+                }
+            }
+        }
+        .banner-footer {
+            .container {
+                a.download {
+                    margin-bottom: 21px;
+                    font-size: 25px;
+                    line-height: 23px;
+                }
+                .platforms {
+                    .platform {
+                        display: inline-block;
+                        width: calc(50% - 4px);
+                        img {
+                            width: 100%;
+                        }
+                        &.microsoft {
+                            order: 1;
+                        }
+                        &.steam {
+                            order: 2;
+                        }
+                        &.nintendo {
+                            order: 3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:576px) {
+    .banner {
+        .banner-body {
+            padding: 0 37px;
+        }
+        .banner-footer {
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
 }
