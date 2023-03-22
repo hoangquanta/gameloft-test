@@ -1,0 +1,93 @@
+@import './../style/variables.scss';
+
+.app-footer {
+    height: 100%;
+    background: $primaryBg;
+    display: flex;
+    align-items: center;
+    color: $whiteText;
+    position: relative;
+    .footer-logo {
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        .footer-logo {
+            text-align: start;
+            img {
+                position: relative;
+                left: -30px;
+            }
+        }
+    }
+    .social-logos {
+        margin-top: 37px;
+        font-size: 25px;
+        font-weight: bold;
+        .logos-title {
+            margin-bottom: 24px ;
+        }
+        .logos {
+            margin-bottom: 32px;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    .footer-links {
+        justify-content: center;
+        margin-top: 30px;
+        
+        .content {
+            display: flex;
+            justify-content: end;
+            > div {
+                width: 150px;
+            }
+        }
+        .footer-title {
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: none;
+        }
+        .links {
+            font-size: 20px;
+            font-weight: 400;
+            @media (max-width: 768px) {
+                font-size: 12px;
+                font-weight: bold;;
+            }
+        }
+
+        @media (min-width: 768px) {
+            gap: 50px;
+            justify-content: end;
+            .content > div {
+                width: 215px;
+            }
+            .footer-title {
+                display: block;
+            }
+        }
+    }
+    .footer-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 24px;
+        border-top: 3px solid $whiteText;
+        p {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            border: none;
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}

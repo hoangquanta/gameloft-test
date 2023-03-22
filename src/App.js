@@ -5,9 +5,7 @@ import Banner from './components/Banner';
 import Form from './components/Contact-form';
 import Promotion from './components/Promotion';
 import GameContent from './components/Game-content';
-
-
-
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -25,6 +23,9 @@ function App() {
       </div>
       <div className='section'>
         <GameContent />
+      </div>
+      <div className='section'>
+        <Footer/>
       </div>
     </div>
   );
