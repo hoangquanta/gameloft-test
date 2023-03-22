@@ -18,11 +18,26 @@ function GameContent() {
                     perMove:1,
                     gap: '2vw',
                     focus: 'center',
-                    // autoplay: true,
+                    autoplay: true,
                     interval: 3000,
                     arrows: false,
                     pagination: true,
                 } }>
+                <SplideSlide>
+                    <GamePicture/>
+                </SplideSlide>
+                <SplideSlide>
+                    <GamePicture/>
+                </SplideSlide>
+                <SplideSlide>
+                    <GamePicture/>
+                </SplideSlide>
+                <SplideSlide>
+                    <GamePicture/>
+                </SplideSlide>
+                <SplideSlide>
+                    <GamePicture/>
+                </SplideSlide>
                 <SplideSlide>
                     <GamePicture/>
                 </SplideSlide>

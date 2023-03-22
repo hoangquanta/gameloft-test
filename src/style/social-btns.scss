@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+.social-btns {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    bottom: 113px;
+    right: 84px;
+    .rounded-btn {
+        width: 33px;
+        height: 33px;
+
+        
+        &:hover{
+            &.share {
+                svg path:last-child {
+                    fill: none !important;
+                }
+                svg path:not(:last-child) {
+                    stroke: none !important;
+                }
+            }
+            &:not(.share) svg path {stroke: none;}
+        }
+    }
+    @media (max-width: 768px) {
+        right: 30px;
+        bottom: 50px;
+        .rounded-btn {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
