@@ -1,15 +1,13 @@
 @import './variables.scss';
 
-.promotion {
+.game-content {
     height: 100%;
-    background: $secondaryBg;
-    padding-top: 79px;
-    padding-bottom: 47px;
-    
+    padding-top: 194px;
+    padding-bottom: 79px;
     .section-description {
         margin-bottom: 56px;
     }
-    .promotion-slide {
+    .game-content-slide {
         height: 600px;
         width: 100%;
         .splide__pagination {

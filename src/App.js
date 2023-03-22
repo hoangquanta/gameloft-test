@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Form from './components/Contact-form';
 import Promotion from './components/Promotion';
+import GameContent from './components/Game-content';
+
 
 
 
@@ -18,6 +20,9 @@ function App() {
       </div>
       <div className='section'>
         <Promotion />
+      </div>
+      <div className='section'>
+        <GameContent />
       </div>
     </div>
   );

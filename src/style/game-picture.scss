@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.game-picture {
+    width: 650px;
+    height: 372px;
+    background: #D5ECFF;
+    position: relative;
+
+    .game-placeholder {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        width: 318px;
+        height: 182px;
+        .game-placeholder img {
+            width: 147px;
+        }
+    }
+    .actions {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        .rounded-btn {
+            height: 40px;
+            width: 42px;
+        }
+    }
+}
