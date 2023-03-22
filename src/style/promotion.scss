@@ -1,0 +1,45 @@
+@import './variables.scss';
+.promotion {
+    height: 100%;
+    background: $secondaryBg;
+    padding-top: 79px;
+    padding-bottom: 47px;
+    .section-description {
+        margin-bottom: 56px;
+    }
+    .promotion-slide {
+        height: 600px;
+        width: 100%;
+        .splide__pagination {
+            display: flex;
+            bottom: -106px;
+            counter-reset: pagination-num;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .splide__pagination__page {
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            transform: unset;
+            background: transparent;
+            opacity: 1;
+        }
+          
+        .splide__pagination__page:before {
+            counter-increment: pagination-num;
+            content: '0' counter( pagination-num );
+            font-size: 17px;
+            font-weight: 400;
+            color: $primaryText;
+        }
+
+        
+        .splide__pagination__page.is-active {
+            border: 3px solid $primaryText;
+        }
+    }
+}
